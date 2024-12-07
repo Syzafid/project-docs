@@ -15,11 +15,12 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iste dolorum te
 ##  Decision Tree
 
 <Mermaid chart={`graph TD;
-    A[Start] --> B{have ac a account?};
-    B -->|Yes| C[login];
-    B -->|No| D[regis];
-    C --> E[Go outside];
-    D --> A;`} />
+    A[Start] --> B[login];
+    B --> C{have an a account?};
+    C -->|Yes| D[login];
+    C -->|No| E[regis];
+    D --> F[Go outside];
+    F --> B;`} />
 
 ## Entity-Relationship Diagram
 
