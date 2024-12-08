@@ -18,6 +18,10 @@ export const Documents: Paths[] = [
         title: "Changelog",
         href: "/changelog",
       },
+      {
+        title: "Blabla",
+        href: "/blabla",
+      },
     ],
   },
   {
