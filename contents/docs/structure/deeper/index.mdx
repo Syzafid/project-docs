@@ -39,7 +39,7 @@ Here a custom tab component from shadcn ui is used.
   <TabsList>
     <TabsTrigger value="js">layout.jsx</TabsTrigger>
     <TabsTrigger value="ts">layout.tsx</TabsTrigger>
-    <TabsTrigger value="php">layout.phpx</TabsTrigger>
+    <TabsTrigger value="js">layout.jsx</TabsTrigger>
   </TabsList>
   <TabsContent value="js">
   ```jsx {7} showLineNumbers
@@ -74,12 +74,19 @@ export default function RootLayout({
 }
 ```
   </TabsContent>
-  <TabsContent value="php">
-```phpx {5} showLineNumbers
-$nama="Amri";
-    $alamat="Kuala Tanjung, Dsn II Pematang Sijago";
-    $kota="Indrapura";
-```
+  <TabsContent value="js">
+  ```jsx {7} showLineNumbers
+import ThemeProvider from './theme-provider'
+ 
+export default function RootLayout({ children }) {
+  return (
+    <html>
+      <body className="container">
+        <ThemeProvider>{children}</ThemeProvider>
+      </body>
+    </html>
+  )}
+````
   </TabsContent>
 </Tabs>
 
