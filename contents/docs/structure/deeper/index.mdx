@@ -5,12 +5,12 @@ description: This section provides an overview of Introduction.
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime, molestiae, facilis aperiam et, error illum vel ullam? Quis architecto dolore ullam
 
-- [x] Write the press release
-- [ ] Update the website
-- [ ] Contact the media
+- [ ] Write the press release
+- [x] Update the website
+- [x] Contact the media
 
 | nama          | Description |   Test Text |   Test Text |
-| :------------ | :---------: | ----------: | ----------: |
+| :------------ | :---------: | :---------: | ----------: |
 | Header        |    Title    | Here's this |   Test Text |
 | Paragraph     |    Text     |    And more |   Test Text |
 | Strikethrough |             |    ~~Text~~ |   Test Text |
@@ -39,6 +39,7 @@ Here a custom tab component from shadcn ui is used.
   <TabsList>
     <TabsTrigger value="js">layout.jsx</TabsTrigger>
     <TabsTrigger value="ts">layout.tsx</TabsTrigger>
+    <TabsTrigger value="php">layout.phpx</TabsTrigger>
   </TabsList>
   <TabsContent value="js">
   ```jsx {7} showLineNumbers
@@ -71,6 +72,13 @@ export default function RootLayout({
     </html>
   )
 }
+```
+  </TabsContent>
+  <TabsContent value="php">
+```phpx {5} showLineNumbers
+$nama="Amri";
+    $alamat="Kuala Tanjung, Dsn II Pematang Sijago";
+    $kota="Indrapura";
 ```
   </TabsContent>
 </Tabs>
