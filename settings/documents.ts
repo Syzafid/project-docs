@@ -41,8 +41,12 @@ export const Documents: Paths[] = [
         href: "/bussinessRequirement",
         items : [
           {
-            title: "Even deeper",
-            href: "/even-deeper",
+            title: "Fungsional & Spesifikasi Kebutuhan Bisnis",
+            href: "/fungsionalSpesifikasi",
+          },
+          {
+            title: "Usability and Performance Requirements",
+            href: "/usabilityPerformance",
           },
         ]
       },
