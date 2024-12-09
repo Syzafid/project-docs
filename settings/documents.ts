@@ -33,54 +33,48 @@ export const Documents: Paths[] = [
     heading: "Documents",
   },
   {
-    title: "Requirement",
-    href: "/requirement",
-    items: [
+    title: "Bussiness Requirement",
+    href: "/bussinessRequirement",
+    items : [
       {
-        title: "Bussiness Requirement",
-        href: "/bussinessRequirement",
-        items : [
-          {
-            title: "Fungsional & Spesifikasi Kebutuhan Bisnis",
-            href: "/fungsionalSpesifikasi",
-          },
-          {
-            title: "Usability and Performance Requirements",
-            href: "/usabilityPerformance",
-          },
-        ]
+        title: "Fungsional & Spesifikasi Kebutuhan Bisnis",
+        href: "/fungsionalSpesifikasi",
       },
       {
-        title: "Stakeholder Requirement",
-        href: "/stakeholderRequirement",
-        items : [
-          {
-            title: "Even deeper",
-            href: "/even-deeper",
-          },
-        ]
+        title: "Usability and Performance Requirements",
+        href: "/usabilityPerformance",
       },
+    ]
+  },
+  {
+    title: "Stakeholder Requirement",
+    href: "/stakeholderRequirement",
+    items : [
       {
-        title: "System Requirement",
-        href: "/systemRequirement",
-        items : [
-          {
-            title: "Even deeper",
-            href: "/even-deeper",
-          },
-        ]
+        title: "Even deeper",
+        href: "/even-deeper",
       },
+    ]
+  },
+  {
+    title: "System Requirement",
+    href: "/systemRequirement",
+    items : [
       {
-        title: "Software Requirement",
-        href: "/softwareRequirement",
-        items : [
-          {
-            title: "Even deeper",
-            href: "/even-deeper",
-          },
-        ]
+        title: "Even deeper",
+        href: "/even-deeper",
       },
-    ],
+    ]
+  },
+  {
+    title: "Software Requirement",
+    href: "/softwareRequirement",
+    items : [
+      {
+        title: "Even deeper",
+        href: "/even-deeper",
+      },
+    ]
   },
   {
     title: "Structure",
