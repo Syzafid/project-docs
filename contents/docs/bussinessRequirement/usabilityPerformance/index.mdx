@@ -1,47 +1,30 @@
 ---
-title: Fungsional & Spesifikasi Kebutuhan Bisnis
+title: Usability and Performance Requirements
 description: This section provides an overview of how to get started with the Documents, Next.js Document Starter Kit.
-keywords: ["fungsionalSpesifikasi", "guide", "nextjs", "documents"]
+keywords: ["usabilityPerformance", "guide", "nextjs", "documents"]
 ---
 
 ![Banner](/images/banner.png "Documents")
 
-## Spesifikasi Kebutuhan Bisnis
+## Usability and Humanity Requirement
 
-KosFunds adalah platform berbasis web yang membantu pengguna mengelola keuangan mereka secara terintegrasi. Platform ini dirancang agar dapat diakses melalui desktop dan mobile browser dengan model B-to-C (Business to Costumer).
+**Ease of Use Requirement**
+- Navigasi yang jelas dan intuitif.
+- Warna, simbol, dan tata letak yang mudah dipahami.
+- Validasi input sebelum proses dilakukan untuk menghindari kesalahan.
+- Sistem memberikan pesan error yang jelas dan langkah pemulihan.
 
-Pengguna dapat mengelola anggaran, memonitor pengeluaran, membuat tujuan keuangan, serta menerima rekomendasi keuangan berbasis AI untuk mencapai target finansial mereka.
+**Personalization Requirement**
+- Mendukung penggunaan dua bahasa, yaitu Bahasa Indonesia dan Bahasa Inggris.
+- Penyesuaian format mata uang ke Rupiah (IDR) dengan simbol "Rp", serta format tanggal sesuai standar Indonesia (DD/MM/YYYY).
+- Menggunakan istilah keuangan dan menu yang familiar bagi pengguna Indonesia, seperti "Anggaran", "Pengeluaran", dan "Tujuan Keuangan".
 
-**Kategori dalam aplikasi KosFunds meliputi:**
+## Performance Requirement
 
-**Dashboard Keuangan**
-- Total pemasukan, pengeluaran, dan anggaran.
-- Grafik pembagian uang berdasarkan kategori spending.
+**Speed and Latency Requirements**
+- Kecepatan akses halaman: <10 detik.
+- Pengujian dengan Google Page Speed: minimal 90/100 (desktop) dan 80/100 (mobile).
+- Mampu menangani minimal 1000 request/detik dengan downtime maksimal 8,3 jam/tahun.
 
-**Menu Spending**
-- Rincian pengeluaran berdasarkan kategori seperti makanan, transportasi, dan utilitas.
-- Riwayat transaksi
-
-**Goals Keuangan**
-- Fitur perencanaan dan monitoring tujuan keuangan spesifik, seperti tabungan atau pembayaran utang.
-
-**Saran Keuangan**
-- Rekomendasi otomatis berbasis API Gemini AI sesuai kondisi finansial pengguna.
-
-**Upcoming Spending**
-- Pengingat transaksi yang akan datang.
-
-
-## Fungsional & Proses
-
-<Mermaid chart={`graph TD;
-    A[Start] --> B[Login Page];
-    B --> C{Ada akun?};
-    C -->|Yes| D[login];
-    C -->|No| E[registerasi page];
-    D --> F{berhasil login?};
-    E --> B;
-    F -->|Yes| G[Dashboard];
-    F -->|No| D;
-    
-    `} />   
+**Reliability and Availability Requirements**
+- Website tersedia 24/7.
