@@ -33,3 +33,15 @@ Pengguna dapat mengelola anggaran, memonitor pengeluaran, membuat tujuan keuanga
 
 
 ## Fungsional & Proses
+
+<Mermaid chart={`graph TD;
+    A[Start] --> B[Login Page];
+    B --> C{Ada akun?};
+    C -->|Yes| D[login];
+    C -->|No| E[registerasi page];
+    D --> F{berhasil login?};
+    E --> B;
+    F -->|Yes| G[Dashboard];
+    F -->|No| D;
+    
+    `} />   
