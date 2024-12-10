@@ -42,7 +42,7 @@ export const Documents: Paths[] = [
       },
       {
         title: "Usability & Performance Requirements",
-        href: "/aadc",
+        href: "/usabilityPerformance",
       },
     ]
   },
