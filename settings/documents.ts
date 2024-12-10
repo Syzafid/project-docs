@@ -37,16 +37,12 @@ export const Documents: Paths[] = [
     href: "/bussinessRequirement",
     items : [
       {
-        title: "AADC",
-        href: "/aadc",
-      },
-      {
         title: "Fungsional & Spesifikasi Kebutuhan Bisnis",
         href: "/fungsionalSpesifikasi",
       },
       {
-        title: "Usability and Performance Requirements",
-        href: "/usability",
+        title: "Usability & Performance Requirements",
+        href: "/aadc",
       },
     ]
   },
