@@ -27,14 +27,15 @@ export const Documents: Paths[] = [
   {
     spacer: true,
   },
-  {
-    title: "Navigation",
-    href: "/navigation",
-    heading: "Documents",
-  },
+  // {
+  //   title: "Navigation",
+  //   href: "/navigation",
+  //   heading: "Documents",
+  // },
   {
     title: "Bussiness Requirement",
     href: "/bussinessRequirement",
+    heading: "Dokumen Requirement",
     items : [
       {
         title: "Fungsional & Spesifikasi Kebutuhan Bisnis",
@@ -58,22 +59,22 @@ export const Documents: Paths[] = [
     title: "Software Requirement",
     href: "/softwareRequirement",
   },
-  {
-    title: "Structure",
-    href: "/structure",
-    items: [
-      {
-        title: "Deeper",
-        href: "/deeper",
-        items : [
-          {
-            title: "Even deeper",
-            href: "/even-deeper",
-          },
-        ]
-      },
-    ],
-  },
+  // {
+  //   title: "Structure",
+  //   href: "/structure",
+  //   items: [
+  //     {
+  //       title: "Deeper",
+  //       href: "/deeper",
+  //       items : [
+  //         {
+  //           title: "Even deeper",
+  //           href: "/even-deeper",
+  //         },
+  //       ]
+  //     },
+  //   ],
+  // },
   {
     spacer: true,
   },
