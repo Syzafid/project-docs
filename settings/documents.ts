@@ -2,27 +2,22 @@ import { Paths } from "@/lib/pageroutes";
 
 export const Documents: Paths[] = [
   {
-    title: "Introduction",
-    href: "/introduction",
-    heading: "Getting started",
-    items: [
+    title: "Pendahuluan",
+    href: "/pendahuluan",
+    items : [
       {
-        title: "Installation",
-        href: "/installation",
+        title: "Deskripsi Project",
+        href: "/deskripsiproject",
       },
       {
-        title: "Setup",
-        href: "/setup",
+        title: "Teknologi yang Digunakan",
+        href: "/teknologi",
       },
       {
-        title: "Changelog",
-        href: "/changelog",
+        title: "Keterkaitan dengan Mata Kuliah",
+        href: "/keterkaitan",
       },
-      {
-        title: "Blabla",
-        href: "/blabla",
-      },
-    ],
+    ]
   },
   {
     spacer: true,
@@ -33,31 +28,113 @@ export const Documents: Paths[] = [
   //   heading: "Documents",
   // },
   {
-    title: "Bussiness Requirement",
-    href: "/bussinessRequirement",
-    heading: "Dokumen Requirement",
+    title: "Analisis dan Desain Perangkat Lunak",
+    href: "/analisisDesain",
     items : [
       {
-        title: "Fungsional & Spesifikasi Kebutuhan Bisnis",
-        href: "/fungsionalSpesifikasi",
+        title: "Analisis Kebutuhan",
+        href: "/analisisKebutuhan",
       },
       {
-        title: "Usability & Performance Requirements",
-        href: "/usabilityPerformance",
+        title: "Diagram",
+        href: "/diagram",
       },
     ]
   },
   {
-    title: "Stakeholder Requirement",
-    href: "/stakeholderRequirement",
+    spacer: true,
   },
   {
-    title: "System Requirement",
-    href: "/systemRequirement",
+    title: "Perancangan Desain Antarmuka",
+    href: "/perancangan",
+    items : [
+      {
+        title: "Dokumen Desain",
+        href: "/dokumenDesain",
+        items : [
+          {
+            title: "Sketsa Awal",
+            href: "/sketsa",
+          },
+          {
+            title: "Wireframe",
+            href: "/wireframe",
+          },
+          {
+            title: "Userflow",
+            href: "/userflow",
+          },
+          {
+            title: "Prototype",
+            href: "/prototype",
+          },
+        ]
+      },
+      {
+        title: "Implementasi Desain",
+        href: "/implementasiDesain",
+        items : [
+          {
+            title: "User",
+            href: "/user",
+          },
+          {
+            title: "Admin",
+            href: "/admin",
+          },
+          {
+            title: "Mobile User",
+            href: "/mUser",
+          },
+          {
+            title: "Mobile Admin",
+            href: "/mAdmin",
+          },
+        ]
+      },
+    ]
   },
   {
-    title: "Software Requirement",
-    href: "/softwareRequirement",
+    spacer: true,
+  },
+  {
+    title: "Pengembangan Aplikasi",
+    href: "/pengembanganAplikasi",
+    items : [
+      {
+        title: "Fitur Utama",
+        href: "/fiturUtama",
+      },
+      {
+        title: "Struktur Basis Data",
+        href: "/strukturBasisData",
+      },
+      {
+        title: "Metode SDLC",
+        href: "/metodeSDLC",
+      },
+    ]
+  },
+  {
+    spacer: true,
+  },
+  {
+    title: "Dokumentasi Penggunaan Website",
+    href: "/dokumentasiPenggunaanWebsite",
+  },
+  {
+    spacer: true,
+  },
+  {
+    title: "Metode Pengembangan Perangkat Lunak",
+    href: "/metodePengembanganPerangkatLunak",
+  },
+  {
+    spacer: true,
+  },
+  {
+    title: "Kesimpulan dan Saran",
+    href: "/kesimpulandanSaran",
   },
   // {
   //   title: "Structure",
@@ -75,50 +152,50 @@ export const Documents: Paths[] = [
   //     },
   //   ],
   // },
-  {
-    spacer: true,
-  },
-  {
-    title: "Markup",
-    href: "/markup",
-    heading: "Components",
-    items: [
-      {
-        title: "Cards",
-        href: "/cards",
-      },
-      {
-        title: "Diagrams",
-        href: "/diagrams",
-      },
-      {
-        title: "Filetree",
-        href: "/filetree",
-      },
-      {
-        title: "Lists",
-        href: "/lists",
-      },
-      {
-        title: "Maths",
-        href: "/maths",
-      },
-      {
-        title: "Notes",
-        href: "/notes",
-      },
-      {
-        title: "Steps",
-        href: "/steps",
-      },
-      {
-        title: "Table",
-        href: "/table",
-      },
-      {
-        title: "Tabs",
-        href: "/tabs",
-      },
-    ],
-  },
+//   {
+//     spacer: true,
+//   },
+//   {
+//     title: "Markup",
+//     href: "/markup",
+//     heading: "Components",
+//     items: [
+//       {
+//         title: "Cards",
+//         href: "/cards",
+//       },
+//       {
+//         title: "Diagrams",
+//         href: "/diagrams",
+//       },
+//       {
+//         title: "Filetree",
+//         href: "/filetree",
+//       },
+//       {
+//         title: "Lists",
+//         href: "/lists",
+//       },
+//       {
+//         title: "Maths",
+//         href: "/maths",
+//       },
+//       {
+//         title: "Notes",
+//         href: "/notes",
+//       },
+//       {
+//         title: "Steps",
+//         href: "/steps",
+//       },
+//       {
+//         title: "Table",
+//         href: "/table",
+//       },
+//       {
+//         title: "Tabs",
+//         href: "/tabs",
+//       },
+//     ],
+//   },
 ];

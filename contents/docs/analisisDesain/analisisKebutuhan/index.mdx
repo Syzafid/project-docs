@@ -1,0 +1,122 @@
+---
+title: Analisis Kebutuhan
+keywords: ["fungsionalSpesifikasi", "guide", "nextjs", "documents"]
+---
+<hr />
+## <u>Bussiness Requirement</u>
+
+### Spesifikasi Kebutuhan Bisnis
+
+KosFunds adalah platform berbasis web yang membantu pengguna mengelola keuangan mereka secara terintegrasi. Platform ini dirancang agar dapat diakses melalui desktop dan mobile browser dengan model B-to-C (Business to Costumer).
+
+Pengguna dapat mengelola anggaran, memonitor pengeluaran, membuat tujuan keuangan, serta menerima rekomendasi keuangan berbasis AI untuk mencapai target finansial mereka.
+
+**Kategori dalam aplikasi KosFunds meliputi:**
+
+**Dashboard Keuangan**
+- Total pemasukan, pengeluaran, dan anggaran.
+- Grafik pembagian uang berdasarkan kategori spending.
+
+**Menu Spending**
+- Rincian pengeluaran berdasarkan kategori seperti makanan, transportasi, dan utilitas.
+- Riwayat transaksi
+
+**Goals Keuangan**
+- Fitur perencanaan dan monitoring tujuan keuangan spesifik, seperti tabungan atau pembayaran utang. (coming soon)
+
+**Upcoming Spending**
+- Pengingat transaksi yang akan datang. (coming soon)
+
+
+### Usability and Humanity Requirements
+
+**Ease of Use Requirements**
+- Navigasi yang jelas dan intuitif.
+- Warna, simbol, dan tata letak yang mudah dipahami.
+- Validasi *input* sebelum proses dilakukan untuk menghindari kesalahan.
+- Sistem memberikan pesan *error* yang jelas dan langkah pemulihan.
+
+**Personalization Requirements**
+- penggunaan Bahasa Inggris.
+- Penyesuaian format mata uang ke Rupiah (IDR) dengan simbol "Rp", serta format tanggal sesuai standar Indonesia (DD/MM/YYYY).
+
+### Performance Requirements
+
+**Speed and Latency Requirements**
+- Kecepatan akses halaman: < 10 detik.
+- Pengujian dengan *Google Page Speed*: minimal 90/100 (desktop) dan 80/100 (mobile).
+- Mampu menangani minimal 1000 *request*/detik dengan *downtime* maksimal 8,3 jam/tahun.
+
+**Reliability and Availability Requirements**
+- Website tersedia 24/7.
+<hr />
+## <u>Stakeholder Requirement</u>
+### Internal Stakeholder
+
+**Developer**
+
+Sebagai seorang developer, saya ingin:
+- Mendapatkan dokumentasi kebutuhan bisnis yang jelas untuk mengembangkan aplikasi sesuai spesifikasi.
+- Menggunakan arsitektur sistem yang modular agar fitur baru mudah ditambahkan di masa depan.
+- Memiliki akses ke sistem logging dan monitoring untuk mempermudah debugging dan perbaikan.
+- Mendapatkan panduan teknis dan data API untuk integrasi dengan layanan eksternal seperti AI atau otentikasi login pihak ketiga.
+- Mengetahui feedback dari pengguna untuk mengoptimalkan performa dan fitur aplikasi.
+
+
+### Eksternal Stakeholder
+
+**User**
+
+Sebagai seorang pengguna, saya ingin:
+- Mencatat pemasukan dan pengeluaran saya dengan mudah dan akurat.
+- Mendapatkan rekomendasi keuangan yang relevan berdasarkan kebiasaan finansial saya.
+- Membuat dan memantau tujuan keuangan saya agar lebih terorganisir.
+- Menggunakan fitur pengingat untuk pembayaran atau pengeluaran mendatang.
+- Menyesuaikan tampilan aplikasi sesuai preferensi saya, seperti tema warna dan kategori spending.
+- Menikmati pengalaman pengguna yang intuitif, bahkan jika saya bukan orang yang ahli teknologi.
+- Memastikan data pribadi saya aman dan tidak disalahgunakan.
+
+<hr />
+## <u>System Requirement</u>
+### Functional System Requirement
+- Sistem harus memungkinkan pengguna untuk mencatat pemasukan dan pengeluaran secara real-time dengan data yang mencakup kategori, jumlah, waktu.
+- Sistem harus menampilkan ringkasan keuangan pengguna, termasuk total pemasukan, pengeluaran, batas anggaran, dan grafik distribusi pengeluaran berdasarkan kategori.
+- Sistem harus memungkinkan pengguna untuk membuat, memonitor, dan mengelola tujuan keuangan.
+
+### non-Functional System Requirement
+- Sistem harus memuat halaman dalam waktu kurang dari 5 detik pada koneksi internet standar.
+- Sistem harus dapat diakses melalui browser modern seperti Chrome, Firefox, serta mendukung perangkat desktop dan mobile.
+- Sistem harus tersedia selama 24/7.
+- Sistem harus memastikan data keuangan pengguna tersimpan dengan aman meskipun terjadi gangguan teknis atau kegagalan server.
+
+<hr />
+## <u>Software Requirement</u>
+### Functional Software Requirement
+**Fitur Login**
+- Sistem harus memvalidasi sebelum pengguna dapat mengakses aplikasi.
+
+**Dashboard Keuangan**
+- Sistem harus menampilkan total pemasukan, pengeluaran, dan anggaran bulanan pengguna secara real-time.
+
+**Pencatatan Pengeluaran**
+- Sistem harus memungkinkan pengguna untuk mencatat pengeluaran dengan detail kategori dan jumlah.
+
+**Fitur Goals**
+- Sistem harus memungkinkan pengguna untuk membuat tujuan keuangan dengan target jumlah tertentu dan tenggat waktu.
+
+**Pengingat Pengeluaran Mendatang**
+- Sistem harus memberikan notifikasi kepada pengguna untuk pengeluaran yang telah dijadwalkan sebelumnya.
+
+
+### Non-Functional Software Requirement
+**Keandalan (Reliability)**
+- Sistem harus memiliki uptime minimal 99.9% untuk memastikan layanan selalu tersedia bagi pengguna.
+
+**Kinerja (Performance)**
+- Sistem harus memuat halaman dalam waktu kurang dari 5 detik pada koneksi internet standar.
+
+**Portabilitas (Portability)**
+- Sistem harus dapat digunakan pada perangkat desktop dan mobile tanpa memerlukan instalasi tambahan.
+
+**Internasionalisasi (Internationalization)**
+- Sistem harus mendukung format mata uang lokal (Rupiah) dan standar tanggal Indonesia (DD/MM/YYYY).
