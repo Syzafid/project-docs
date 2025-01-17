@@ -1,0 +1,27 @@
+---
+title: Pengembangan kode dan basis data
+---
+
+Dalam pengembangan aplikasi KosFunds, kode dan basis data berperan sangat penting untuk memastikan aplikasi berfungsi dengan baik dan data pengguna dapat dikelola dengan efektif. Berikut adalah penjelasan mengenai pengembangan kode dan basis data dalam proyek ini:
+
+## PEngembangan Kode 
+Aplikasi KosFunds dibangun menggunakan PHP native sebagai bahasa pemrograman backend untuk mengatur logika aplikasi dan berkomunikasi dengan basis data. PHP dipilih karena kemampuannya dalam menangani berbagai jenis permintaan dari pengguna dan menghubungkannya dengan sistem basis data.
+
+- **1. Backend Logic**  
+       PHP menangani seluruh logika untuk fitur-fitur seperti pencatatan pemasukan, pengeluaran, perhitungan anggaran, serta pengelolaan akun pengguna.
+- **2. Interaktivitas dengan Pengguna**  
+       JavaScript digunakan untuk meningkatkan interaktivitas pada halaman, misalnya dalam menampilkan grafik atau chart keuangan secara real-time.
+- **3. Desain dan Tampilan**  
+       CSS dan Bootstrap digunakan untuk menciptakan tampilan yang responsif dan menarik di berbagai perangkat. Desain antarmuka pengguna (UI) didasarkan pada teori pewarnaan monokrom dengan dominasi warna hijau neon dan hitam untuk menciptakan kontras yang menarik.
+
+## Pengembangan Basis Data
+KosFunds menggunakan MySQL sebagai sistem manajemen basis data untuk menyimpan dan mengelola data pengguna, transaksi, dan tujuan keuangan. MySQL dipilih karena kestabilan dan kemampuannya untuk menangani relasi antar tabel secara efisien.
+
+- **1.Tabel Pengguna (Users)**  
+    Menyimpan data akun pengguna seperti nama, email, password yang terenkripsi, dan role (user atau admin).
+- **2. Tabel Pemasukan dan Pengeluaran (Income & Expenses)**  
+    JavaScript digunakan untuk meningkatkan interaktivitas pada halaman, misalnya dalam menampilkan grafik atau chart keuangan secara real-time.
+- **3. Tabel Budget**  
+    CSS dan Bootstrap digunakan untuk menciptakan tampilan yang responsif dan menarik di berbagai perangkat. Desain antarmuka pengguna (UI) didasarkan pada teori pewarnaan monokrom dengan dominasi warna hijau neon dan hitam untuk menciptakan kontras yang menarik.
+- **4. Relasi Antar Tabel**  
+    Setiap tabel berelasi satu sama lain, misalnya pengguna yang memiliki banyak transaksi pemasukan dan pengeluaran, serta dapat menetapkan beberapa tujuan keuangan. Relasi ini membantu menjaga integritas data dan memudahkan query untuk mengambil informasi yang relevan.

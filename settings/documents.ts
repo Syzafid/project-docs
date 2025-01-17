@@ -132,6 +132,28 @@ export const Documents: Paths[] = [
       {
         title: "Metode SDLC",
         href: "/metodeSDLC",
+        items : [
+          {
+            title: "Analisis Kebutuhan",
+            href: "/analisiskebutuhan",
+          },
+          {
+            title: "Pembuatan Diagram UML",
+            href: "/pembuatandiagaram",
+          },
+          {
+            title: "Pengembangan Kode dan Basis Data",
+            href: "/pengembangankode",
+          },
+          {
+            title: "Pengujian",
+            href: "/pengujian",
+          },
+          {
+            title: "Deploy",
+            href: "/deploy",
+          },
+        ]
       },
     ]
   },
@@ -140,7 +162,13 @@ export const Documents: Paths[] = [
   },
   {
     title: "Dokumentasi Penggunaan Website",
-    href: "/dokumentasiPenggunaanWebsite",
+    href: "/dokumentasiPenggunaan",
+    items : [
+      {
+        title: "Panduan Pengguna",
+        href: "/panduanpenggunaan",
+      },
+    ]
   },
   {
     spacer: true,
