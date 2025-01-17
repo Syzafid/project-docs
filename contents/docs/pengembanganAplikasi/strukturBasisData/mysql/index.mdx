@@ -1,0 +1,58 @@
+---
+title: MySQL
+---
+## Tabel Users
+| Kolom         | Tipe Data        | Deskripsi                                                                 |
+| :------------ | :---------------:| -------------------------------------------------------------------------:|
+| id            | int(11)          | Primary key, ID unik untuk setiap pengguna.                              |
+| username      | varchar(50)      | Nama pengguna unik.                                                      |
+| role          | varchar(50)      | Peran pengguna dalam sistem.                                             |
+| password      | varchar(255)     | Kata sandi pengguna.                                                     |
+| email         | varchar(255)     | Alamat email pengguna.                                                   |
+| created_at    | timestamp        | Waktu pembuatan data pengguna.                                           |
+
+
+## Tabel Categories
+| Kolom         | Tipe Data        | Deskripsi                                                                 |
+| :------------ | :---------------:| -------------------------------------------------------------------------:|
+| id            | int(11)          | Primary key, ID unik untuk kategori.                                     |
+| name          | varchar(100)     | Nama kategori.                                                           |
+| icon          | varchar(255)     | Ikon atau representasi visual dari kategori.                             |
+| created_at    | timestamp        | Waktu pembuatan data kategori.                                           |
+
+
+## Tabel Incomes
+| Kolom         | Tipe Data        | Deskripsi                                                                 |
+| :------------ | :---------------:| -------------------------------------------------------------------------:|
+| id            | int(11)          | Primary key, ID unik untuk setiap pemasukan.                             |
+| user_id       | int(11)          | Foreign key, mengacu ke tabel `users`.                                   |
+| source        | varchar(255)     | Sumber pemasukan.                                                        |
+| amount        | decimal(10,0)    | Jumlah pemasukan.                                                        |
+| income_date   | date             | Tanggal pemasukan.                                                       |
+| created_at    | timestamp        | Waktu pembuatan data pemasukan.                                          |
+
+
+## Tabel Expenses
+| Kolom         | Tipe Data        | Deskripsi                                                                 |
+| :------------ | :---------------:| -------------------------------------------------------------------------:|
+| id            | int(11)          | Primary key, ID unik untuk setiap pengeluaran.                           |
+| user_id       | int(11)          | Foreign key, mengacu ke tabel `users`.                                   |
+| budget_id     | int(11)          | Foreign key, mengacu ke tabel `budgets`.                                 |
+| category_id   | int(11)          | Foreign key, mengacu ke tabel `categories`.                              |
+| date          | date             | Tanggal transaksi pengeluaran.                                           |
+| transaction   | varchar(255)     | Deskripsi transaksi pengeluaran.                                         |
+| amount        | decimal(10,0)    | Jumlah pengeluaran.                                                      |
+
+
+## Tabel Budgets
+| Kolom         | Tipe Data        | Deskripsi                                                                 |
+| :------------ | :---------------:| -------------------------------------------------------------------------:|
+| id            | int(11)          | Primary key, ID unik untuk setiap anggaran.                              |
+| user_id       | int(11)          | Foreign key, mengacu ke tabel `users`.                                   |
+| total_budget  | decimal(10,2)    | Total anggaran yang tersedia.                                            |
+| name          | varchar(255)     | Nama anggaran.                                                           |
+| category_id   | int(11)          | Foreign key, mengacu ke tabel `categories`.                              |
+| amount        | decimal(10,0)    | Jumlah anggaran.                                                         |
+| start_date    | date             | Tanggal mulai anggaran.                                                  |
+| end_date      | date             | Tanggal berakhir anggaran.                                               |
+| created_at    | timestamp        | Waktu pembuatan data anggaran.                                           |

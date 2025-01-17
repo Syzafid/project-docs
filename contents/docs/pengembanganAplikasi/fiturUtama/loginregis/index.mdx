@@ -1,0 +1,32 @@
+---
+title: Fitur Login dan Registrasi
+---
+
+Aplikasi KosFunds menyediakan fitur login dan registrasi untuk mempermudah pengguna dalam mengakses dan mengelola data keuangan mereka. Sistem juga mendukung pengelolaan role untuk membedakan antara pengguna biasa dan admin. Berikut adalah tahapan masing-masing fitur:
+
+## 1. Registrasi
+- **Halaman Registrasi**  
+    Pengguna diarahkan ke halaman registrasi yang berisi form untuk mengisi informasi seperti nama, email, password.
+- **Validasi Data**  
+    - Sistem memeriksa apakah semua field telah diisi dengan benar.
+    - Sistem memvalidasi format email
+    - Sistem memeriksa apakah email yang digunakan sudah terdaftar sebelumnya.
+- **Penyimpanan Data**  
+    - Data pengguna yang valid disimpan ke dalam database menggunakan PHP dan MySQL.
+    - Password dienkripsi menggunakan metode hashing untuk keamanan.
+    - Role default diset sebagai "user" kecuali diatur oleh admin saat registrasi.
+- **Konfirmasi Registrasi**  
+    Setelah registrasi berhasil, pengguna diarahkan ke halaman login untuk masuk ke dalam sistem.
+
+## 2. Login
+- **Halaman Login**  
+    Pengguna diarahkan ke halaman login yang berisi form untuk memasukkan email dan password yang telah terdaftar.
+- **Validasi Data**  
+    - Sistem memeriksa apakah email dan password yang dimasukkan sesuai dengan data di database.
+    - Jika valid, role pengguna akan diperiksa.
+- **Pengelolaan Role**  
+    - Jika role pengguna adalah admin, maka pengguna diarahkan ke halaman admin untuk mengelola data pengguna, transaksi, dan pengaturan aplikasi.
+    - Jika role pengguna adalah user, maka pengguna diarahkan ke dashboard utama untuk mengelola keuangan pribadi.
+- **Pengelolaan Sesi**  
+    - Setelah berhasil login, sistem membuat sesi pengguna untuk menjaga keamanan akses.
+    - JInformasi sesi digunakan untuk mengidentifikasi pengguna yang sedang aktif.

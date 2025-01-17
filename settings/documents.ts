@@ -104,10 +104,30 @@ export const Documents: Paths[] = [
       {
         title: "Fitur Utama",
         href: "/fiturUtama",
+        items : [
+          {
+            title: "Operasi Crud",
+            href: "/operasiCrud",
+          },
+          {
+            title: "Fitur Login dan Registerasi",
+            href: "/loginregis",
+          },
+          {
+            title: "Fitur Interaktif",
+            href: "/finter",
+          },
+        ]
       },
       {
         title: "Struktur Basis Data",
         href: "/strukturBasisData",
+        items : [
+          {
+            title: "MYSQL",
+            href: "/mysql",
+          },
+        ]
       },
       {
         title: "Metode SDLC",
