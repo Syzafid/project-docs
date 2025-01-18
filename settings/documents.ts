@@ -13,10 +13,6 @@ export const Documents: Paths[] = [
         title: "Teknologi yang Digunakan",
         href: "/teknologi",
       },
-      {
-        title: "Keterkaitan dengan Mata Kuliah",
-        href: "/keterkaitan",
-      },
     ]
   },
   {
@@ -175,7 +171,21 @@ export const Documents: Paths[] = [
   },
   {
     title: "Metode Pengembangan Perangkat Lunak",
-    href: "/metodePengembanganPerangkatLunak",
+    href: "/metodepengembangan",
+    items : [
+      {
+        title: "Penjelasan metode",
+        href: "/penjelasanmetode",
+      },
+      {
+        title: "Alasan pemilihan metode",
+        href: "/alasanpemilihan",
+      },
+      {
+        title: "Implementasi metode",
+        href: "/implementasimetode",
+      },
+    ]
   },
   {
     spacer: true,
