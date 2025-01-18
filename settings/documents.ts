@@ -187,13 +187,13 @@ export const Documents: Paths[] = [
       },
     ]
   },
-  {
-    spacer: true,
-  },
-  {
-    title: "Kesimpulan dan Saran",
-    href: "/kesimpulandanSaran",
-  },
+  // {
+  //   spacer: true,
+  // },
+  // {
+  //   title: "Kesimpulan dan Saran",
+  //   href: "/kesimpulandanSaran",
+  // },
   // {
   //   title: "Structure",
   //   href: "/structure",
